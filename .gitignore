@@ -92,6 +92,11 @@ hs_err_pid*
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/dictionaries
+.idea/.gitignore
+.idea/misc.xml
+.idea/modules.xml
+.idea/TIL.iml
+.idea/vcs.xml
 
 # Sensitive or high-churn files:
 .idea/**/dataSources/
