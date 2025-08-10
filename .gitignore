@@ -97,6 +97,7 @@ hs_err_pid*
 .idea/modules.xml
 .idea/TIL.iml
 .idea/vcs.xml
+.idea/
 
 # Sensitive or high-churn files:
 .idea/**/dataSources/
