@@ -2,13 +2,13 @@
 
 # 1과목 데이터모델링의 이해
 
-![image.png](SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image.png)
+![image.png](image/SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image.png)
 
 데이터베이스 = 데이터의 집합
 
 하지만 데이터를 파일 형태로 다루게 되면 관리하기 어렵기 때문에 보다 쉽게 관리하기 위해 DBMS(Database Management System)이 등장하였다. 흔히 아는 Oracle이 DBMS의 대표적인 예시다.
 
-![image.png](SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%201.png)
+![image.png](image/SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%201.png)
 
 물리적 vs 논리적 설계 방식에 따라 부르는 용어가 다르다.
 
@@ -168,7 +168,7 @@ ERD 작성 절차는 아래 6단계가 있다.
 4. 모든 엔티티에서 유일한 이름을 부여해야 한다.
 5. 엔티티 생성 의미대로 이름을 부여해야 한다.
 
-![image.png](SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%202.png)
+![image.png](image/SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%202.png)
 
 ---
 
@@ -184,7 +184,7 @@ ERD 작성 절차는 아래 6단계가 있다.
 - 각 속성이 하나의 값을 가지고 있어야 하며 이를 속성의 원자성이라 이야기한다.
     - 원자성이란 데이터 모델에서 각 엔티티의 인스턴스가 해당 속성에 대해 단일하고 명확한 값을 가지는 특성을 이야기한다.
 
-![image.png](SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%203.png)
+![image.png](image/SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%203.png)
 
 ## 엔티티, 인스턴스, 속성, 속성값의 관계
 
@@ -289,25 +289,25 @@ ERD 작성 절차는 아래 6단계가 있다.
 
 대표성 여부
 
-![image.png](SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%204.png)
+![image.png](image/SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%204.png)
 
 생성 여부
 
-![image.png](SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%205.png)
+![image.png](image/SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%205.png)
 
 속성 수
 
-![image.png](SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%206.png)
+![image.png](image/SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%206.png)
 
 대체 여부
 
-![image.png](SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%207.png)
+![image.png](image/SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%207.png)
 
 어떤 엔티티, 비즈니스 모델에서 만들어지는지에 따라 하나의 속성이 다르게 정의될 수 있다. 인조식별자는 중복 데이터가 발생할 수 있어 데이터 품질이 저하될 수 있다는 **단점**이 있다. 또한 불필요한 인덱스를 생성하여 저장공간 낭비나 DNL 성능을 저하시킬 수도 있다.(**인덱스**는 원래 조회 성능을 향상시키기 위한 객체이며, 인덱스는 DML(INSERT, UPDATE, DELETE)시 INDEX SPLIT 현상을 인해 성능이 저하될 수 있다.)
 
 식별자 표기법
 
-![image.png](SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%208.png)
+![image.png](image/SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%208.png)
 
 ## 주식별자의 특징
 
@@ -336,14 +336,14 @@ ERD 작성 절차는 아래 6단계가 있다.
     - PK를 서로 PK로 가지고 있는 관계
     - ERD에서는 실선으로 표시한다.
 
-![image.png](SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%209.png)
+![image.png](image/SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%209.png)
 
 - 비식별 관계(Non-identification relationship)
     - PK를 서로 PK로 가지지 않는 관계
     - 강한 개체의 PK를 다른 엔티티에서는 일반 속성으로 가지는 경우
     - ERD에서는 점선으로 표시한다.
 
-![image.png](SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%2010.png)
+![image.png](image/SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%2010.png)
 
 ## Key의 종류
 
@@ -374,7 +374,7 @@ ERD 작성 절차는 아래 6단계가 있다.
 
 제1 정규화(1NF): 테이블 컬럼이 원자성을 갖도록 테이블을 분해하는 단계
 
-![image.png](SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%2011.png)
+![image.png](image/SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%2011.png)
 
 제2 정규화(2NF)
 
@@ -382,7 +382,7 @@ ERD 작성 절차는 아래 6단계가 있다.
     - 완전 함수 종속: 기본키를 구성하는 모든 컬럼의 값이 다른 컬럼을 결정짓는 상태
 - PK가 2개 이상일 때 발생하며 PK의 일부와 종속되는 관계가 있다면 분리한다.
 
-![image.png](SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%2012.png)
+![image.png](image/SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%2012.png)
 
 좌측 엔티티는 현재 학번+강의명을 PK로 잡고 있는데 강의실은 강의명에 의해서만 결정되기 때문에 부분 함수 종속성을 가진다. 따라서 강의명과 강의실을 속성으로 가지는 새로운 엔티티를 생성해야 한다. 성적은 학번+강의명에 의해서 결정되기 때문에 또 학번, 강의명, 성적을 속성으로 가지는 새로운 엔티티를 생성해야 한다.
 
@@ -391,9 +391,9 @@ ERD 작성 절차는 아래 6단계가 있다.
 - 제2정규화 이후에 이행적 종속을 없애도록 테이블을 분해하는 단계
     - 이행적 종속: A → B, B → C의 관계가 성립할 때, A → C가 성립하는 경우
 
-![image.png](SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%2013.png)
+![image.png](image/SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%2013.png)
 
-![image.png](SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%2014.png)
+![image.png](image/SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%2014.png)
 
 반정규화(De-Normalization)
 
@@ -431,7 +431,7 @@ ERD 작성 절차는 아래 6단계가 있다.
 
 아래와 같이 매니저번호(MGR)은 매니저의 사원번호를 의미하는데 결국 사원번호(EMPNO)와 관련이 있는 경우이다.
 
-![image.png](SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%2015.png)
+![image.png](image/SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%2015.png)
 
 위 예제를 SQL로 표현하자면 아래와 같다.
 
@@ -441,7 +441,7 @@ FROM EMP.E1, EMP.E2
 WHERE E1.MGR = E2.EMPNO;
 ```
 
-![image.png](SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%2016.png)
+![image.png](image/SQLD%20235dbeb48cf580f5b6bfd03e6b4506a3/image%2016.png)
 
 상호 배타적 관계
 

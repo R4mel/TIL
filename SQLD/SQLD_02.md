@@ -1,6 +1,6 @@
 # 2과목 SQL 기본
 
-![image.png](2%E1%84%80%E1%85%AA%E1%84%86%E1%85%A9%E1%86%A8%20SQL%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%2024edbeb48cf5806681eadf7c72c2557c/image.png)
+![image.png](image/SQLD%2024edbeb48cf5806681eadf7c72c2557c/image.png)
 
 데이터베이스와 DBMS
 
@@ -49,7 +49,7 @@
 
 ## SQL 종류
 
-![image.png](2%E1%84%80%E1%85%AA%E1%84%86%E1%85%A9%E1%86%A8%20SQL%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%2024edbeb48cf5806681eadf7c72c2557c/image%201.png)
+![image.png](image/SQLD%2024edbeb48cf5806681eadf7c72c2557c/image%201.png)
 
 ## SELECT문
 
@@ -104,7 +104,7 @@ ORDER BY 정렬 컬럼명
 - ORACLE: 문자 상수의 대소문자 구분!!
 - MYSQL: 문자 상수의 대소문자 구분X
 
-![image.png](2%E1%84%80%E1%85%AA%E1%84%86%E1%85%A9%E1%86%A8%20SQL%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%2024edbeb48cf5806681eadf7c72c2557c/image%202.png)
+![image.png](image/SQLD%2024edbeb48cf5806681eadf7c72c2557c/image%202.png)
 
 IN 연산자는 포함연산자로 여러 상수와 일치하는 조건을 전달할 때 사용한다. 상수는 괄호로 묶어 동시에 전달하면 된다. 아래 SQL문의 결과값이 같다.
 
@@ -237,26 +237,26 @@ NULL은 ORACLE에서는 기본적으로 마지막에 배치하고 SQL Server은 
     - 단일행 함수 형태이다.
     - OUTPUT은 대부분 문자값이다.
 
-![image.png](2%E1%84%80%E1%85%AA%E1%84%86%E1%85%A9%E1%86%A8%20SQL%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%2024edbeb48cf5806681eadf7c72c2557c/image%203.png)
+![image.png](image/SQLD%2024edbeb48cf5806681eadf7c72c2557c/image%203.png)
 
 - 숫자형 함수
     - 숫자를 입력하면 숫자 값을 반환한다.
     - 단일행 함수 형태이다.
     - ORACLE과 SQL Server끼리 함수가 거의 동일하다.
 
-![image.png](2%E1%84%80%E1%85%AA%E1%84%86%E1%85%A9%E1%86%A8%20SQL%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%2024edbeb48cf5806681eadf7c72c2557c/image%204.png)
+![image.png](image/SQLD%2024edbeb48cf5806681eadf7c72c2557c/image%204.png)
 
 - 날짜형 함수
     - 날짜와 연산과 관련된 함수이다.
     - ORACLE과 SQL Server끼리의 함수가 거의 다르다.
 
-![image.png](2%E1%84%80%E1%85%AA%E1%84%86%E1%85%A9%E1%86%A8%20SQL%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%2024edbeb48cf5806681eadf7c72c2557c/image%205.png)
+![image.png](image/SQLD%2024edbeb48cf5806681eadf7c72c2557c/image%205.png)
 
 - 변환 함수
     - 값의 데이터 타입을 변환한다.
     - 문자를 숫자로, 숫자를 문자로, 날짜를 문자로 변경한다.
 
-![image.png](2%E1%84%80%E1%85%AA%E1%84%86%E1%85%A9%E1%86%A8%20SQL%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%2024edbeb48cf5806681eadf7c72c2557c/image%206.png)
+![image.png](image/SQLD%2024edbeb48cf5806681eadf7c72c2557c/image%206.png)
 
 - 그룹함수
     - 다중행 함수이다.
@@ -264,11 +264,11 @@ NULL은 ORACLE에서는 기본적으로 마지막에 배치하고 SQL Server은 
     - GROUP BY와 함께 자주 사용된다.
     - ORACLE, MYSQL Server끼리 함수가 거의 동일하다.
 
-![image.png](2%E1%84%80%E1%85%AA%E1%84%86%E1%85%A9%E1%86%A8%20SQL%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%2024edbeb48cf5806681eadf7c72c2557c/image%207.png)
+![image.png](image/SQLD%2024edbeb48cf5806681eadf7c72c2557c/image%207.png)
 
 - 일반함수
 
-![image.png](2%E1%84%80%E1%85%AA%E1%84%86%E1%85%A9%E1%86%A8%20SQL%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%2024edbeb48cf5806681eadf7c72c2557c/image%208.png)
+![image.png](image/SQLD%2024edbeb48cf5806681eadf7c72c2557c/image%208.png)
 
 ```sql
 #CASE문 사용 예제
@@ -322,7 +322,7 @@ FROM 테이블1, 테이블2
 WHERE 테이블1.컬럼 = 테이블2.컬럼;
 ```
 
-![image.png](2%E1%84%80%E1%85%AA%E1%84%86%E1%85%A9%E1%86%A8%20SQL%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%2024edbeb48cf5806681eadf7c72c2557c/image%209.png)
+![image.png](image/SQLD%2024edbeb48cf5806681eadf7c72c2557c/image%209.png)
 
 ## SELF JOIN
 
@@ -332,7 +332,7 @@ WHERE 테이블1.컬럼 = 테이블2.컬럼;
 
 EMPLOYEES 테이블에거 각 직원의 이름과 매니저의 이름을 함께 출력하려고 한다.
 
-![image.png](2%E1%84%80%E1%85%AA%E1%84%86%E1%85%A9%E1%86%A8%20SQL%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%2024edbeb48cf5806681eadf7c72c2557c/image%2010.png)
+![image.png](image/SQLD%2024edbeb48cf5806681eadf7c72c2557c/image%2010.png)
 
 ```sql
 SELECT E1.EMPLOYEE_ID, E1.FIRST_NAME, E1.LAST_NAME, E1.MANAGER_ID, 32.EMPLOYEE_ID, E2.FIRST_NAME, E2.LAST_NAME
@@ -340,7 +340,7 @@ FROM EMPLOYEES E1, EMPLOYEES E2
 WHERE E1.MANAGER_ID=E2.EMPLOYEE_ID;
 ```
 
-![image.png](2%E1%84%80%E1%85%AA%E1%84%86%E1%85%A9%E1%86%A8%20SQL%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%2024edbeb48cf5806681eadf7c72c2557c/image%2011.png)
+![image.png](image/SQLD%2024edbeb48cf5806681eadf7c72c2557c/image%2011.png)
 
 ## INNER JOIN
 
@@ -372,7 +372,7 @@ SELECT 테이블1.컬럼명, 테이블2.컬럼명
 FROM 테이블1 NATURAL JOIN 테이블2;
 ```
 
-![image.png](2%E1%84%80%E1%85%AA%E1%84%86%E1%85%A9%E1%86%A8%20SQL%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%2024edbeb48cf5806681eadf7c72c2557c/image%2012.png)
+![image.png](image/SQLD%2024edbeb48cf5806681eadf7c72c2557c/image%2012.png)
 
 ## CROSS JOIN
 
@@ -389,7 +389,7 @@ SELECT 테이블1.컬럼명, 테이블2.컬럼명
 FROM 테이블1, 테이블2;
 ```
 
-![image.png](2%E1%84%80%E1%85%AA%E1%84%86%E1%85%A9%E1%86%A8%20SQL%20%E1%84%80%E1%85%B5%E1%84%87%E1%85%A9%E1%86%AB%2024edbeb48cf5806681eadf7c72c2557c/image%2013.png)
+![image.png](image/SQLD%2024edbeb48cf5806681eadf7c72c2557c/image%2013.png)
 
 ## OUTER JOIN
 
