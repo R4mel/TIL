@@ -76,7 +76,7 @@ GSON은 이 2가지 모두를 매우 중요한 디자인 목표로 간주한다.
 - 폴더 구조 형태로 계층적으로 구성되어 있음
 - org.springframework.spring-core
 
-![image.png](image.png)
+![image.png](image/image.png)
 
 package 사용하는 방법
 
