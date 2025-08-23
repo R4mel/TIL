@@ -29,7 +29,7 @@ Process(프로세스)
 - 하나의 프로그램을 여러 번 실행하면 프로세스가 메모리 상에서 실행된다.
 - 같은 시간에 여러 개의 프로그램을 실행하는 시분할 방식을 멀티 태스킹이라고 하며, 대부분의 운영체제는 시분할 방식을 지원합니다. 프로세스 관리는 운영체제의 중요한 부분이다.
 
-![image.png](image.png)
+![image.png](image/image.png)
 
 Process Scheduling(프로세스 스케줄링)
 
@@ -60,7 +60,7 @@ Process 상태변화
 - 하나의 프로그램이 실행되면 그 프로그램에 대응하는 프로세스가 생성되어 ready 리스트의 끝에 들어간다.
 - ready 리스트 상의 다른 프로세스들이 CPU를 할당받아 ready 리스트를 떠나면 프로세스는 리스트의 앞으로 이동하고 CPU를 사용할 수 있게 된다.
 
-![image.png](image%201.png)
+![image.png](image/image%201.png)
 
 Dispatch
 
@@ -102,7 +102,7 @@ thread 생성
     - 다른 클래스를 상속해야 하는 클래스 구현 시 유리함
     - 재사용성이 높고 코드의 일관성을 유지할 수 있는 장점
 
-![image.png](image%202.png)
+![image.png](image/image%202.png)
 
 # Main thread
 
@@ -119,7 +119,7 @@ thread 생성
 
 - Thread.currentThread() 메소드를 호출하여 현재 실행 중인 Thread의 참조를 얻을 수 있다.
 
-![image.png](image%203.png)
+![image.png](image/image%203.png)
 
 Daemon thread
 
@@ -176,7 +176,7 @@ Context Switching
 - interrupt: 커널 함수를 통해서 프로그램 실행 도중에 멈춰버림(SIGKILL interrupt signal)
 - Preemption: 더 우선순위가 높은 일을 해야 할 때 선점해버려서
 
-![image.png](image%204.png)
+![image.png](image/image%204.png)
 
 컨텍스트(Context)란?
 
@@ -200,7 +200,7 @@ Context Switching
     - 각종 명령어를 실행하기 위해 필요한 데이터를 저장하는 register의 상태 교체
     - 스레드1의 레지스터 상태를 저장해야 어디까지 실행되었는지 등 상태 정보를 기억해서 다시 컨텍스트 스위칭 때 활용할 수 있음.
 
-![image.png](image%205.png)
+![image.png](image/image%205.png)
 
 이때 스레드1, 스레드2가 속하는 프로세스가 동일한지, 다른지에 따라서 스위칭 과정이 달라진다.
 
@@ -213,7 +213,7 @@ Thread Context Switching
 
 커널모드 전환 + CPU register 상태 교체
 
-![image.png](image%206.png)
+![image.png](image/image%206.png)
 
 Process Context Switching
 
@@ -224,9 +224,9 @@ Process Context Switching
 
 커널모드 전환 + CPU register 상태 교체 + 가상 메모리 주소 처리(MMU 수정 + TLB 캐시 비우기)
 
-![image.png](image%207.png)
+![image.png](image/image%207.png)
 
-![image.png](image%208.png)
+![image.png](image/image%208.png)
 
 캐시 오염(Cache Pollution)
 
@@ -482,7 +482,7 @@ void runnable() {
 // Thread: Thread-1
 ```
 
-![image.png](image%209.png)
+![image.png](image/image%209.png)
 
 참고 자료
 
@@ -557,7 +557,7 @@ CPU 자원 관리
 
 # Thread life cycle
 
-![image.png](image%2010.png)
+![image.png](image/image%2010.png)
 
 Thread 상태
 
@@ -589,24 +589,14 @@ Terminated
 
 Thread 상태변경 method
 
-| **method** | **description** |
-| --- | --- |
-| Interrupt() | 스레드에서 InterruptedException 예외를 발생시켜 예외 처리 코드에서 실행 대기 상태로 가거나 종료 상태로 가도록 함 |
-| notify()
-notiflyAll() | Block 상태에서 wait() 메소드에 의해 Wait 상태에 있는 스레드를 Runnable 상태로 만듦 |
-| sleep(long millis)
-sleep(long millis, int nanos)) | 주어진 시간 동안 스레드를 Timed_wait 상태로 만듦. 주어진 시간이 지나면 자동으로 Runnable 상태로 바뀜 |
-| join()
-join(long millis)
-join(long millis,, int nanos) | join()을 사용하면 메인 스레드가 다른 스레드들이 종료될 때까지 기다리게 되어, 스레드 간의 순서를 조절하고 동기화할 수 있습니다. |
-| wait()
-wait(long millis)
-wait(long millis, int nanos) | Block에서 스레드를 Wait 상태로 만듦. 파라미터로 주어진 시간이 지나면 Runnable 상태가 됨. 시간이 주어지지 않은 경우 notify(), notifyAll() 메소드에 의해 Runnable 상태로 변경됩니다. |
-| yield() | 현재 실행 중인 스레드가 CPU 점유를 잠시 양보하겠다는 힌트를 스케줄러에게 제공 합니다.
-- 실행을 강제로 중단시키지 않고, 단지 스케줄러에게 “다른 스레드에게 CPU를 양보할 수도 있다”는 힌트를 제공하는 수준
-- 반드시 다른 스레드가 실행되는 것을 보장하지 않음.
-- 주로 테스트 코드나 특정 상황에서 "양보" 의도를 표현할 때 사용.
-- 상태 변화 : Running → Runnable |
+| **method**                                                    | **description**                                                                                                                                                                                                     |
+|---------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Interrupt()                                                   | 스레드에서 InterruptedException 예외를 발생시켜 예외 처리 코드에서 실행 대기 상태로 가거나 종료 상태로 가도록 함                                                                                                                                           |
+| notify()<br/>notiflyAll()                                     | Block 상태에서 wait() 메소드에 의해 Wait 상태에 있는 스레드를 Runnable 상태로 만듦                                                                                                                                                          |
+| sleep(long millis)<br/>sleep(long millis, int nanos))         | 주어진 시간 동안 스레드를 Timed_wait 상태로 만듦. 주어진 시간이 지나면 자동으로 Runnable 상태로 바뀜                                                                                                                                                  |
+| join()<br/>join(long millis)<br/>join(long millis, int nanos) | join()을 사용하면 메인 스레드가 다른 스레드들이 종료될 때까지 기다리게 되어, 스레드 간의 순서를 조절하고 동기화할 수 있습니다.                                                                                                                                         |
+| wait()<br/>wait(long millis)<br/>wait(long millis, int nanos) | Block에서 스레드를 Wait 상태로 만듦. 파라미터로 주어진 시간이 지나면 Runnable 상태가 됨. 시간이 주어지지 않은 경우 notify(), notifyAll() 메소드에 의해 Runnable 상태로 변경됩니다.                                                                                        |
+| yield()                                                       | 현재 실행 중인 스레드가 CPU 점유를 잠시 양보하겠다는 힌트를 스케줄러에게 제공 합니다. 실행을 강제로 중단시키지 않고, 단지 스케줄러에게 “다른 스레드에게 CPU를 양보할 수도 있다”는 힌트를 제공하는 수준 반드시 다른 스레드가 실행되는 것을 보장하지 않음. 주로 테스트 코드나 특정 상황에서 "양보" 의도를 표현할 때 사용. 상태 변화 : Running → Runnable |
 
 yield는 현재 스레드가 프로세서의 현재 사용을 포기할 의향이 있지만 가능한 한 빨리 다시 스케줄링 되기를 원한다는 것을 “스케줄러”에 알리는 메커니즘을 제공한다.
 
